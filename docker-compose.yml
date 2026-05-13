@@ -15,7 +15,7 @@ services:
       - --max-connections=300
       - --innodb-buffer-pool-size=512M
     ports:
-      - "3306:3306"
+      - "3305:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
