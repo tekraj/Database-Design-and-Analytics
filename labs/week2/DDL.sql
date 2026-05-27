@@ -396,3 +396,7 @@ INSERT INTO order_items (order_id, product_id, quantity, price, created_at, upda
 update books set name = 'Harry Potter and the Philosopher''s Stone' , published_date = '1997-06-26' where id = 1;
 
 delete from book_rentals where id = 3;
+
+
+alter table customers add column dob datetime   default rand() * (now() - '1950-01-01') + '1950-01-01';
+
